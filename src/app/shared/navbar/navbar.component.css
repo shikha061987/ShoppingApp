@@ -1,0 +1,223 @@
+/*mat-toolbar {
+  padding: 0 4rem;
+  background-color: lightblue;
+}
+
+nav a {
+  color: black;
+  margin-left: 1rem;
+
+  text-decoration: none;
+  font-weight: 500;
+
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  nav a {
+    margin: 0.25rem 0;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.custom-cart-button {
+  margin-right: 0;
+  /* remove any default spacing if present 
+  padding-right: 0;
+  /* optional: fine-tune spacing 
+}
+
+.custom-cart-icon {
+  margin-left: 0;
+  /* remove unwanted space from left 
+
+  background-color: transparent;
+  border-color: none;
+  border: none;
+  /* Remove border 
+  outline: none;
+  /* Remove focus outline 
+  box-shadow: none;
+  /* Remove any shadow effects 
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  /* Adjust as needed, or use margin manually 
+  display: flex;
+  flex-direction: row;
+  padding-left: 0px;
+  width: 100%;
+
+}
+.headerName{
+  margin-left: 10px;
+  padding: 5px 0;
+  display: inline-block;
+  text-decoration-color: blue;
+  
+  color: #da2222;            /* Dark neutral color 
+  font-weight: bold;         /* Bold for brand presence 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}*/
+
+/* Toolbar Style */
+mat-toolbar {
+  padding: 0 4rem;
+  background-color: lightblue;
+}
+
+/* Navigation Links */
+nav a {
+  color: black;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hover Effect for Links */
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Spacer for Navbar */
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Logo Style */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Cart Button */
+.custom-cart-button {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/* Cart Icon Customization */
+.custom-cart-icon {
+  margin-left: 0;
+  background-color: transparent;
+  border-color: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Cart Actions Styling */
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-direction: row;
+  padding-left: 0px;
+  width: 100%;
+}
+
+/* Header Name Styling */
+.headerName {
+  margin-left: 10px;
+  padding: 5px 0;
+  display: inline-block;
+  text-decoration-color: blue;
+  color: #da2222; /* Dark neutral color */
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========== Responsive Design ========== */
+
+/* Mobile and Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  mat-toolbar {
+    padding: 0 1rem; /* Reduce padding on smaller screens */
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the left for better mobile readability */
+  }
+
+  nav a {
+    margin: 0.25rem 0;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+    margin-top: 1rem; /* Give space above spacer */
+  }
+
+  .logo {
+    font-size: 18px; /* Adjust logo size on smaller screens */
+  }
+
+  .cart-actions {
+    justify-content: space-between; /* Align cart actions more evenly */
+  }
+
+  .headerName {
+    font-size: 16px; /* Adjust font size for better mobile experience */
+    margin-left: 0;
+    padding: 3px 0; /* Adjust padding */
+  }
+
+  .custom-cart-icon {
+    width: 30px; /* Resize cart icon on smaller screens */
+  }
+}
+
+/* Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 16px; /* Reduce font size even further for small screens */
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
+  }
+
+  nav a {
+    font-size: 12px; /* Further reduce font size */
+  }
+
+  .cart-actions {
+    flex-direction: column;
+    gap: 10px; /* Space out cart actions more for better clarity */
+  }
+
+  .headerName {
+    font-size: 14px; /* Smaller text size for very small screens */
+    padding: 2px 0;
+  }
+
+  .custom-cart-icon {
+    width: 25px; /* Further reduce icon size */
+  }
+}
